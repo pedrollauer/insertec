@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Receita">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tela_vemax" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Receita"
+        android:textColor="#FBF9F9"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:gravity="center"
+        android:numeric="integer"
+        android:text="1"
+        android:textColor="#FDFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Número"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Carregar"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <EditText
+        android:id="@+id/textView2"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:gravity="center"
+        android:numeric="decimal"
+        android:text="43.2"
+        android:textColor="#FDFDFD"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parâmetro A"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/textView33"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:gravity="center"
+        android:text="32.3"
+        android:textColor="#FAFAFA"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/textView22"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:gravity="center"
+        android:numeric="decimal"
+        android:text="0"
+        android:textColor="#FBFBFB"
+        app:layout_constraintEnd_toEndOf="@+id/textView33"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parâmetro B"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textView33"
+        app:layout_constraintEnd_toEndOf="@+id/textView33"
+        app:layout_constraintStart_toStartOf="@+id/textView33" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:numeric="decimal"
+        android:text="32"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parâmetro C"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parâmetro D"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22" />
+</androidx.constraintlayout.widget.ConstraintLayout>
